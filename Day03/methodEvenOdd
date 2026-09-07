@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class methodEvenOdd{
+    static int check(int n){
+        if(n==0){
+            System.out.println("Number is Zero");
+            return 0;
+        }
+        else if(n%2==0){
+            System.out.println("Number is Even");
+            return 0;
+        }
+        else{
+            System.out.println("Number is odd");
+            return 0;
+        }
+    }
+    public static void main(String [] args){
+        int opt;
+        do { 
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Number:");
+        int n=sc.nextInt();
+        check(n);
+        System.out.println("If You want to check another number PRESS 1 ");
+         System.out.println("If You want to EXIT press 0 ");
+         opt=sc.nextInt();
+        } while (opt==1);
+        System.out.println("Thankyou!!!!");
+    }
+}
