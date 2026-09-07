@@ -1,0 +1,13 @@
+public class methodMulN{
+    static int multi(int a,int b){
+        int mul;
+        mul=a*b;
+       // System.out.println("Addition is:"+sum);
+      return mul;
+    }
+    public static void main(String [] args){
+        int a=20, b=30;
+      int mul= multi(a,b);
+       System.out.println("Multiplication is:"+mul);
+    }
+}   
