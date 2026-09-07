@@ -1,0 +1,54 @@
+import java.util.Scanner;
+public class calculator{
+    static int addition(int a,int b){
+        return (a+b);
+    }
+
+    static int substraction(int a,int b){
+        return (a-b);
+    }
+
+    static int multi(int a,int b){
+        return (a*b);
+    }
+
+    static int div(int a,int b){
+        return (a/b);
+    }
+    public static void main(String ar[]){
+        int ans ,a ,b,opt,store;
+        
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter values:");
+        a=sc.nextInt();
+        b=sc.nextInt();
+        do { 
+            
+        System.out.println("which operation you want to perform: add press 1, sub press 2, mul press 3, div press 4");
+        opt= sc.nextInt();
+        switch(opt){
+            case 1:
+                ans= addition(a,b);
+                System.out.println("Addition is"+ans);
+                break;
+
+            case 2:
+                ans= substraction(a,b);
+                System.out.println("substraction is"+ans); 
+                break;
+                
+            case 3:
+                ans= multi(a,b);
+                System.out.println("multiplication is"+ans);
+                break;
+                
+            case 4:
+                ans= div(a,b);
+                System.out.println("division is"+ans);    
+                break;
+        }
+        System.out.println("If you want to perform another operation press 1 or to exit press 0");
+        store=sc.nextInt();
+        } while (store==1);
+    }
+}
