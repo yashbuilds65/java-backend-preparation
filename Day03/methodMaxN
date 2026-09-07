@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class methodMaxN{
+    static int max(int a,int b){
+        if(a==b){
+            System.out.println("Both numbers are equal");
+            return 0;
+        }
+        else if(a<b){
+            System.out.println("2nd Number is Greater");
+            return 0;
+        }
+        else{
+            System.out.println("1st Number is Greater");
+            return 0;
+        }
+    }
+    public static void main(String[] args){
+         int opt;
+        do { 
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Numbers:");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        max(a,b);
+        System.out.println("If You want to check another number PRESS 1 ");
+         System.out.println("If You want to EXIT press 0 ");
+         opt=sc.nextInt();
+        } while (opt==1);
+        System.out.println("Thankyou!!!!");
+    }
+}
